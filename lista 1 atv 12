@@ -1,0 +1,26 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Consumo mensal (kWh): ");
+        double consumo = sc.nextDouble();
+
+        double tarifa;
+
+        if (consumo <= 100.0) {
+            tarifa = 0.50;
+        } else if (consumo <= 300.0) {
+            tarifa = 0.75;
+        } else {
+            tarifa = 1.10;
+        }
+
+        double total = consumo * tarifa;
+
+        System.out.println("Tarifa aplicada: R$ " + tarifa + " / kWh");
+        System.out.println("Valor total da conta: R$ " + total);
+    }
+}
