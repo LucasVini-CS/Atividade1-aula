@@ -1,0 +1,22 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor em reais");
+        double real = sc.nextDouble();
+
+        System.out.println("agora a cotação do dolar ");
+        double cotacao = sc.nextDouble();
+
+        if (cotacao > 0 ) {
+            double dolar = real / cotacao;
+
+            System.out.println("O valor em dolar é " + dolar);
+        }
+
+        else  System.out.println("cotação não pode ser 0 >:(");
+    }
+}
