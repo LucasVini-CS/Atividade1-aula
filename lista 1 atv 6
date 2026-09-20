@@ -1,0 +1,17 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("O raio do circulo é: ");
+        double raio = sc.nextDouble();
+
+        double area =  3.14 * (raio * raio);;
+
+        double perimetro = 3.14 * (raio + raio);
+
+        System.out.println("A area é de " + area + " e o perimetro é de " + perimetro);
+    }
+}
