@@ -1,0 +1,22 @@
+package org.example;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Base do retângulo: ");
+        double base = sc.nextDouble();
+
+        System.out.print("Altura do retângulo: ");
+        double altura = sc.nextDouble();
+
+        double area = base * altura;
+        double perimetro = 2 * (base + altura);
+        double diagonal = (base * base) + (altura * altura);
+
+
+        System.out.println("A base é " + base + " o perimetro é " + perimetro + " e a diagonal é " + diagonal);
+    }
+}
