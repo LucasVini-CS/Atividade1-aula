@@ -1,0 +1,25 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Diga o valor da hora trabalhada");
+        double Vhora = sc.nextDouble();
+
+        System.out.println("Diga a hora trabalhada");
+        double Thora = sc.nextDouble();
+
+
+        double Salariob = Vhora * Thora;
+        double DescontoINSS = Salariob * 0.08;
+        double SalarioL = Salariob - DescontoINSS;
+
+        System.out.println("========== Salario final é ==========");
+        System.out.println("Salario Bruto: " + Salariob);
+        System.out.println("Desconto do INSS: " + DescontoINSS);
+        System.out.println("Teu salario liguido aí: " + SalarioL);
+
+    }
+}
