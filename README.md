@@ -1,1 +1,22 @@
 # Atividade1-aula
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Nome: ");
+        String nome = sc.nextLine();
+
+        System.out.print("Idade: ");
+        int idade = sc.nextInt();
+
+        System.out.print("Altura (m): ");
+        double altura = sc.nextDouble();
+
+        System.out.println(nome + " tem " + idade + " anos e " + altura + "m de altura.");
+
+    }
+}
