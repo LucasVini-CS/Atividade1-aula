@@ -1,0 +1,29 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Primeiro número inteiro: ");
+        int n1 = sc.nextInt();
+
+        System.out.print("Segundo número inteiro: ");
+        int n2 = sc.nextInt();
+
+        System.out.print("Terceiro número inteiro: ");
+        int n3 = sc.nextInt();
+
+        int maior = n1;
+
+        if (n2 > maior) {
+            maior = n2;
+        }
+
+        if (n3 > maior) {
+            maior = n3;
+        }
+
+        System.out.println("O maior número informado é: " + maior);
+    }
+}
