@@ -1,0 +1,25 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nota da primeira prova: ");
+        double nota1 = sc.nextDouble();
+
+        System.out.println("Nota da segunda prova: ");
+        double nota2 = sc.nextDouble();
+
+        System.out.println("Nota da terçeira prova: ");
+        double nota3 = sc.nextDouble();
+
+        System.out.println("Nota da quarta prova: ");
+        double nota4 = sc.nextDouble();
+
+        double notaF = nota1 + nota2 + nota3 + nota4;
+        double notaR = notaF / 4;
+
+        System.out.println("Sua nota final é: " + notaR);
+    }
+}
